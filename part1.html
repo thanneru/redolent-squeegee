@@ -2,46 +2,12 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>HTML & CSS - Assessment Task </title>
-    <style>
-        label:hover, input:hover, select:hover {
-            font-size: 150%
-        }
-
-        fieldset {
-            background: lightyellow;
-            border: 10px solid yellow;
-            margin-bottom: 10px;
-            width: 720px;
-        }
-
-        label {
-            width: 180px;
-            display: inline-block;
-            text-align: right;
-            vertical-align: top;
-        }
-
-        textarea {
-            width: 360px;
-            height: 50px;
-        }
-
-        .range-text {
-            text-align: center;
-            vertical-align: top;
-        }
-
-        .checkbox-radio {
-            width: auto;
-        }
-    </style>
-    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+    <title>HTML & CSS - Assessment Task - Part 1 </title>
 </head>
 <body>
 <h1> Please Enter Your Details For Our Dating Website! </h1>
 
-<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
     <fieldset>
         <legend>Your Face</legend>
         <label for="faceImage">Your Image:</label>
@@ -56,9 +22,9 @@
 
         <label>Gender:</label>
         <input type="radio" name="gender" id="male" value="Male" required>
-        <label class="checkbox-radio" for="male">Male</label>
+        <label for="male">Male</label>
         <input type="radio" name="gender" id="female" value="Female" required>
-        <label class="checkbox-radio" for="female">Female</label>
+        <label for="female">Female</label>
         <br>
         <label for="age">Age:</label>
         <input type="number" name="age" id="age" required> <br>
@@ -83,14 +49,14 @@
         <legend>Your Indicators</legend>
 
         <label for="height">Height:</label>
-        <span class="range-text">Short</span>
+        Short
         <input type="range" name="height" id="height" min="0" max="100">
-        <span class="range-text">Tall</span><br>
+        Tall<br>
 
         <label for="salary">Salary:</label>
-        <span class="range-text">Poor</span>
+        Poor
         <input type="range" name="salary" id="salary" min="0" max="100">
-        <span class="range-text">Rich</span><br>
+        Rich<br>
     </fieldset>
     <fieldset>
         <legend>Your Contact Information</legend>
@@ -103,11 +69,11 @@
 
         <label>Method to contact you:</label>
         <input type="checkbox" name="contactMethod" id="contactEmail" value="Email">
-        <label for="contactEmail" class="checkbox-radio">Email</label>
+        <label for="contactEmail">Email</label>
         <input type="checkbox" name="contactMethod" id="whatsApp" value="WhatsApp">
-        <label for="whatsApp" class="checkbox-radio">WhatsApp</label>
+        <label for="whatsApp">WhatsApp</label>
         <input type="checkbox" name="contactMethod" id="inAppChat" value="In-app chat">
-        <label for="inAppChat" class="checkbox-radio">In-app chat</label>
+        <label for="inAppChat">In-app chat</label>
     </fieldset>
     <br>
     <input type="submit" value="Submit"/>
